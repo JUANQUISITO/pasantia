@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+    app:
+        build:
+            context: ./config_docker
+            dockerfile: Dockerfile
+        container_name: siwebpi
+        restart: always
+        ports:
+            - 7080:80
+        expose:
+            - 7080
+        environment:
+            - DATABASE_HOST= mariadb_host
+            - DATABASE_PORT= 3306
+            - VIRTUAL_HOST=siwebpi.eispdm.com
+            #- VIRTUAL_PORT=7080
+            - LETSENCRYPT_HOST=siwebpi.eispdm.com
+            - LETSENCRYPT_EMAIL=yhgrissel@gmail.com
+        volumes:
+            - ./:/var/www/html/siwebpi
+            - ./config_docker/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini 
+        networks:
+            nginx_proxy_net:
+                aliases:
+                    - nginx_proxy_host
+            siwebpi_net:
+                aliases:
+                    - siwebpi_host
+        
+networks:
+    nginx_proxy_net:
+        name: net
+        driver: bridge
+
+    siwebpi_net:
+        name: network_mariadb
+        driver: bridge

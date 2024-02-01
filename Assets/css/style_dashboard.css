@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/*!
+* Start Bootstrap - SB Admin v7.0.4 (https://startbootstrap.com/template/sb-admin)
+* Copyright 2013-2021 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-sb-admin/blob/master/LICENSE)
+*/
+/*!
+ * Bootstrap v5.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+   
+
+        *,
+        *::before,
+        *::after {
+        box-sizing: border-box;
+        }
+
+
+   /* .right{
+        float: right;
+        
+    }*/
+
+    
+    /*.contenido
+    {
+        width: 85%;
+        max-width: 800px;
+        align-items: right;
+        
+    }*/
+
+    /*
+    .container-fluid px-4
+    {
+        width: 100%;
+        padding-right: var(--bs-gutter-x, 0.75rem);
+        padding-left: var(--bs-gutter-x, 0.75rem);
+        margin-right: auto;
+        margin-left: auto;
+    }*/
+
+   /* #layoutSidenav_content { max-width: 800px; margin: 0.5px; float: right; }*/
+
+   /*#contenedora { max-width: 800px; margin: 0.5px; float: right; }*/
+   
+ /*  .contenedora 
+   { 
+       max-width: 800px; 
+       margin: 0.5px; 
+       float: right; 
+    }*/
+
+
+
+
+
+
